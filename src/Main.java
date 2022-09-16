@@ -128,10 +128,10 @@ public class Main {
     }
 
     private static void getName(Scanner in, ContactBook cBook) {
-        String phone;
-        phone = in.nextLine();
+        int phone;
+        phone = in.nextInt();
 
-        if (cBook.phoneExists(phone))
+        if (!cBook.phoneExists(phone))
             System.out.println(PHONE_NOT_EXIST);
         else
             cBook.getContact(phone);

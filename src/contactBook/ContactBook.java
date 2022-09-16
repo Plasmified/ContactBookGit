@@ -93,4 +93,44 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
+    public boolean phoneExists(int phone) {
+        boolean value = false;
+
+            for (int i = 0; i < counter; i++) {
+                if (contacts[i].getPhone() == phone) {
+                    value = true;
+                    break;
+                }
+            }
+
+        return value;
+    }
+
+    public String getContact(int phone) {
+        String value = "";
+
+        for (int i = 0; i < counter; i++) {
+            if (contacts[i].getPhone() == phone) {
+                value = contacts[i].getName();
+                break;
+            }
+        }
+
+        return value;
+    }
+
+    public boolean equalPhoneNumber() {
+        boolean value = false;
+
+        for (int i = 0; i < counter; i++) {
+            for (int j = i+1; j < counter; j++) {
+                if (contacts[i].getPhone() == contacts[j].getPhone()) {
+                    value = true;
+                    break;
+                }
+            }
+        }
+
+        return value;
+    }
 }
