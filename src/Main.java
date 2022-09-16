@@ -29,7 +29,7 @@ public class Main {
 
     public static final String SAME_PHONE = "There are contacts that share phone numbers.";
 
-    public static final String DIFFERENT_PHONE = "All contacts have different phone numbers";
+    public static final String DIFFERENT_PHONE = "All contacts have different phone numbers.";
     public static final String QUIT_MSG = "Goodbye!";
     public static final String COMMAND_ERROR = "Unknown command.";
 
