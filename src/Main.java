@@ -129,12 +129,12 @@ public class Main {
 
     private static void getName(Scanner in, ContactBook cBook) {
         int phone;
-        phone = in.nextInt();
+        phone = in.nextInt(); in.nextLine();
 
         if (!cBook.phoneExists(phone))
             System.out.println(PHONE_NOT_EXIST);
         else
-            cBook.getContact(phone);
+            System.out.println(cBook.getContact(phone));
     }
 
     private static void setPhone(Scanner in, ContactBook cBook) {
