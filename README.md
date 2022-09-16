@@ -4,3 +4,4 @@ Fork this project to make your own version of it.
 
 Pedro Cavaleiro 57974
 João Nini 60233
+Beatriz Gonçalves 59940
